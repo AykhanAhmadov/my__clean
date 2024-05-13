@@ -1,0 +1,83 @@
+.main__service {
+  .service__service {
+    padding-top: 20rem;
+    span,a {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      padding-right: 2rem;
+      color: #fff;
+    }
+    .active__color {
+      color: #fdce00;
+    }
+  }
+  .boxes__service {
+    .box__service__right,
+    .box__service__left {
+      display: flex;
+      gap: 10rem;
+      align-items: center;
+      padding-top: 16rem;
+
+      .box__text__service {
+        width: calc(40% - 10rem);
+        h3{
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: #fdce00;
+        }
+        p {
+          font-size: 1.6rem;
+          //   font-family: "Poppins", sans-serif;
+          padding-bottom: 2rem;
+        }
+      }
+      .box__img__service {
+        width: calc(50% - 10rem);
+        height: 46rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .box__service__left {
+      justify-content: left;
+      flex-wrap: wrap-reverse;
+    }
+    .box__service__right {
+      justify-content: right;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main__service {
+        .service__service{
+            span{
+                font-size: 4rem;
+            }
+        }
+      .boxes__service {
+        .box__service__left,
+        .box__service__right {
+          .box__text__service {
+            width: 100%;
+            padding: 0 3rem;
+            h3{
+                font-size: 5rem;
+            }
+            p {
+              font-size: 3rem;
+            }
+          }
+          .box__img__service {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }

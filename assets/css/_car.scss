@@ -1,0 +1,160 @@
+.main__car {
+  padding-top: 20rem;
+  .car__location {
+    font-size: 1.6rem;
+
+    a {
+      color: #fff;
+    }
+    span {
+      color: #fff;
+    }
+    .active {
+      color: #fdce00;
+    }
+  }
+  .car__boxes {
+    .car__box {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-between;
+      .car__box__text {
+        max-width: 40%;
+        h3 {
+          font-size: 4.5rem;
+          color: #fdce00;
+          padding: 6rem 0 3rem;
+        }
+        span {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.6rem;
+          padding-top: 4rem;
+        }
+        .about__the__car {
+          display: flex;
+          gap: 12rem;
+          padding-top: 4rem;
+          ul {
+            li {
+              font-size: 1.6rem;
+              line-height: 2;
+            }
+          }
+        }
+        .contact__box__respons {
+            display: none;
+            padding-top: 6.5rem;
+          p {
+            display: flex;
+            gap: 3rem;
+            padding-top: 2rem;
+            i {
+              color: #fdce00;
+              font-size: 3rem;
+              transition: 0.3s;
+            }
+            a {
+              color: #fff;
+              display: block;
+              margin-bottom: 2rem;
+              &:hover {
+                color: #fdce00;
+              }
+            }
+            &:hover .phone {
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+      .car__box__img {
+        max-width: 50%;
+        .big__car {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .small__car {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem;
+          padding-top: 3rem;
+          img {
+            width: calc(33.33% - 2rem);
+          }
+        }
+        .contact__box__web {
+            padding-top: 6.5rem;
+          p {
+            display: flex;
+            gap: 3rem;
+            font-size: 1.6rem;
+            padding-top: 2rem;
+            i {
+              color: #fdce00;
+              font-size: 3rem;
+              transition: 0.3s;
+            }
+            a {
+              color: #fff;
+              display: block;
+              margin-bottom: 2rem;
+              &:hover {
+                color: #fdce00;
+              }
+            }
+            &:hover .phone {
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:768px) {
+    .main__car{
+        .car__location{
+            font-size: 3rem;
+        }
+        .car__boxes{
+            .car__box{
+                .car__box__text{
+                    max-width: 100%;
+                    h3{
+                        font-size: 5rem;
+                    }
+                    span{
+                        font-size: 3rem;
+                    }
+                    p{
+                        font-size: 3rem;
+                    }
+                    .about__the__car{
+                        ul{
+                            li{
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .contact__box__respons{
+                        display: block;
+                    }
+                }
+                .car__box__img{
+                    max-width: 100%;
+                    padding-top: 4rem;
+                    .contact__box__web{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

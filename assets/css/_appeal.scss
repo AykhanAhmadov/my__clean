@@ -1,0 +1,127 @@
+.main__appeal {
+  padding-top: 20rem;
+  .appeal {
+    .appeal__location {
+      a,
+      span {
+        font-size: 2rem;
+        color: #fff;
+      }
+      .active__color {
+        color: #fdce00;
+      }
+    }
+    .appeal__boxes {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .appeal__form {
+        padding-top: 2rem;
+        // width:  50%;
+        flex: 1;
+        form {
+          .form__content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            .form__left,
+            .form__right {
+              width: calc(50% - 4rem);
+              input,
+              select {
+                width: 100%;
+                padding: 1rem;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #888;
+                color: #fff;
+                margin-top: 3rem;
+             
+                &:focus{
+                  border-bottom: 1px solid #fdce00;
+  
+                  }
+              }
+              input[type="date"]::-webkit-calendar-picker-indicator {
+                filter: invert(1);
+                cursor: pointer;
+              }
+              select {
+                option {
+                  background-color: black;
+                  border: none;
+                  outline: none;
+                }
+              }
+            }
+          }
+          textarea {
+            width: 94%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #888;
+            color: #fff;
+            margin-top: 3rem;
+            padding: 1rem;
+            resize: vertical;
+            min-height: 10rem;
+            max-height: 20rem;
+            &:focus{
+              border-bottom: 1px solid #fdce00;
+
+              }
+          }
+          button{
+            font-size: 3rem;
+            color: #fff;
+            display: inline-block;
+            margin-top: 6rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: .5s;
+            i{
+              transform: rotate(45deg);
+              transition: .5s;  
+            }
+            &:hover i{
+              transform: rotate(360deg);
+            }
+            &:hover{
+              color: #fdce00;
+            }
+          }
+        }
+      }
+      .appeal__img{
+        // width: 50%;
+        flex: 1;
+        img{
+          width: 100%;
+          height: 58rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:768px) {
+    .appeal__form,
+    .appeal__img{
+      flex-basis: 100% !important;
+      margin-top: 2rem;
+    }
+    // form{
+    //   .form__content{
+    //     .form__left,
+    //     .form__right{
+    //       width: 100% !important;
+    //     }
+    //   }
+    // }
+
+}
