@@ -41,3 +41,29 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .main__products{
+    .products__products{
+      a, span{
+        font-size: 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 410px) {
+  .main__products{
+    .products__products{
+      a, span{
+        font-size: 4rem;
+      }
+      .products__bg{
+        .products__text{
+          font-size: 5rem;
+          bottom: -7rem;
+          left: 5rem;
+        }
+      }
+    }
+  }
+}

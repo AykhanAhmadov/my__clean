@@ -1347,6 +1347,21 @@ main .contact .contact__boxes .contact__box a:hover i {
   padding-top: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .main__products .products__products a, .main__products .products__products span {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .main__products .products__products a, .main__products .products__products span {
+    font-size: 4rem;
+  }
+  .main__products .products__products .products__bg .products__text {
+    font-size: 5rem;
+    bottom: -7rem;
+    left: 5rem;
+  }
+}
 .main__product {
   padding-top: 20rem;
 }
@@ -1561,7 +1576,7 @@ main .contact .contact__boxes .contact__box a:hover i {
     max-width: 100%;
   }
   .main__car .car__boxes .car__box .car__box__text h3 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .main__car .car__boxes .car__box .car__box__text span {
     font-size: 3rem;
