@@ -1114,6 +1114,11 @@ main .contact .contact__boxes .contact__box a:hover i {
 }
 
 @media screen and (max-width: 768px) {
+  .main__about .about__us__about .about__bg .about__text__about {
+    font-size: 10rem;
+    bottom: -10rem;
+    left: 7rem;
+  }
   .main__about .boxes__about .box__about__left .box__text__about,
   .main__about .boxes__about .box__about__right .box__text__about {
     width: 100%;
@@ -1209,8 +1214,13 @@ main .contact .contact__boxes .contact__box a:hover i {
 }
 
 @media screen and (max-width: 768px) {
-  .main__services .services__services span {
+  .main__services .services__services a, .main__services .services__services span {
     font-size: 4rem;
+  }
+  .main__services .services__services .services__bg .services__text {
+    font-size: 6rem;
+    bottom: -8rem;
+    left: 7rem;
   }
   .main__services .services__boxes .services__box .services__box__img {
     width: 100%;
@@ -1576,7 +1586,7 @@ main .contact .contact__boxes .contact__box a:hover i {
     max-width: 100%;
   }
   .main__car .car__boxes .car__box .car__box__text h3 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .main__car .car__boxes .car__box .car__box__text span {
     font-size: 3rem;

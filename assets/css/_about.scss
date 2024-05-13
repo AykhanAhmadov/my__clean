@@ -2,7 +2,6 @@
   .about__us__about {
     padding-top: 20rem;
     a, span {
-    //   font-family: "Poppins", sans-serif;
       font-size: 1.6rem;
       padding-right: 2rem;
       color: #fff;
@@ -45,7 +44,6 @@
         width: calc(40% - 10rem);
         p {
           font-size: 1.6rem;
-        //   font-family: "Poppins", sans-serif;
           padding-bottom: 2rem;
         }
       }
@@ -71,6 +69,15 @@
 
 @media screen and (max-width: 768px) {
   .main__about {
+    .about__us__about{
+      .about__bg{
+        .about__text__about{
+          font-size: 10rem;
+          bottom: -10rem;
+          left: 7rem;
+        }
+      }
+    }
     .boxes__about {
       .box__about__left,
       .box__about__right {

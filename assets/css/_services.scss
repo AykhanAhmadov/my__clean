@@ -81,8 +81,15 @@
 @media screen and (max-width:768px) {
     .main__services{
         .services__services{
-            span{
+            a,span{
                 font-size: 4rem;
+            }
+            .services__bg{
+                .services__text{
+                    font-size: 6rem;
+                    bottom: -8rem;
+                    left: 7rem;
+                }
             }
         }
         .services__boxes{
