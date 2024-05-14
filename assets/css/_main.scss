@@ -227,7 +227,7 @@ main {
     }
     .product__boxes {
       display: flex;
-      flex-wrap: wrap;
+      overflow-x: scroll;
       gap: 3rem;
       padding-top: 3rem;
 
@@ -297,8 +297,8 @@ main {
     }
     .cars__boxes {
       display: flex;
-      flex-wrap: wrap;
       gap: 3rem;
+      overflow-x: scroll;
       padding-top: 3rem;
 
       .cars__box {
@@ -489,7 +489,7 @@ main {
     .products {
       .product__boxes {
         .product__box {
-          max-width: calc(50% - 3rem);
+          min-width: calc(40% - 3rem);
           h5 {
             font-size: 5rem;
           }
@@ -505,7 +505,7 @@ main {
     .cars {
       .cars__boxes {
         .cars__box {
-          max-width: calc(50% - 2rem);
+          min-width: calc(40% - 2rem);
         }
       }
     }
@@ -586,7 +586,7 @@ main {
       .product__boxes {
         .product__box {
           padding-top: 50px;
-          max-width: calc(100%);
+          min-width: calc(80%);
           h5 {
             font-size: 7rem;
           }
@@ -605,7 +605,7 @@ main {
       }
       .cars__boxes {
         .cars__box {
-          max-width: calc(100%);
+          min-width: calc(80%);
           h5 {
             font-size: 6rem;
           }

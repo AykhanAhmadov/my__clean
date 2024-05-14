@@ -677,7 +677,7 @@ main .products h3 a i {
 }
 main .products .product__boxes {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: scroll;
   gap: 3rem;
   padding-top: 3rem;
 }
@@ -743,8 +743,8 @@ main .cars h3 a i {
 }
 main .cars .cars__boxes {
   display: flex;
-  flex-wrap: wrap;
   gap: 3rem;
+  overflow-x: scroll;
   padding-top: 3rem;
 }
 main .cars .cars__boxes .cars__box {
@@ -920,7 +920,7 @@ main .contact .contact__boxes .contact__box a:hover i {
     padding: 16rem 6rem;
   }
   main .products .product__boxes .product__box {
-    max-width: calc(50% - 3rem);
+    min-width: calc(40% - 3rem);
   }
   main .products .product__boxes .product__box h5 {
     font-size: 5rem;
@@ -932,7 +932,7 @@ main .contact .contact__boxes .contact__box a:hover i {
     font-size: 3rem;
   }
   main .cars .cars__boxes .cars__box {
-    max-width: calc(50% - 2rem);
+    min-width: calc(40% - 2rem);
   }
   main .blog .blog__box {
     gap: 2rem;
@@ -990,7 +990,7 @@ main .contact .contact__boxes .contact__box a:hover i {
   }
   main .products .product__boxes .product__box {
     padding-top: 50px;
-    max-width: 100%;
+    min-width: 80%;
   }
   main .products .product__boxes .product__box h5 {
     font-size: 7rem;
@@ -1005,7 +1005,7 @@ main .contact .contact__boxes .contact__box a:hover i {
     font-size: 6rem;
   }
   main .cars .cars__boxes .cars__box {
-    max-width: 100%;
+    min-width: 80%;
   }
   main .cars .cars__boxes .cars__box h5 {
     font-size: 6rem;
