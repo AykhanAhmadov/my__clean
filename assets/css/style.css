@@ -54,6 +54,11 @@ html {
   font-family: bebas;
   src: url("../fonts/BebasNeue-Regular.ttf ");
 }
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 150%;
+  }
+}
 .header {
   padding: 34px 0;
   position: absolute;
@@ -681,8 +686,11 @@ main .products .product__boxes {
   gap: 3rem;
   padding-top: 3rem;
 }
+main .products .product__boxes::-webkit-scrollbar {
+  display: none;
+}
 main .products .product__boxes .product__box {
-  max-width: calc(25% - 2.5rem);
+  min-width: calc(25% - 2.5rem);
   color: #fff;
 }
 main .products .product__boxes .product__box:hover img {
@@ -747,8 +755,11 @@ main .cars .cars__boxes {
   overflow-x: scroll;
   padding-top: 3rem;
 }
+main .cars .cars__boxes::-webkit-scrollbar {
+  display: none;
+}
 main .cars .cars__boxes .cars__box {
-  max-width: calc(33.33% - 2rem);
+  min-width: calc(33.33% - 2rem);
   color: #fff;
 }
 main .cars .cars__boxes .cars__box:hover img {

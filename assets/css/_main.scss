@@ -230,9 +230,11 @@ main {
       overflow-x: scroll;
       gap: 3rem;
       padding-top: 3rem;
-
+      &::-webkit-scrollbar{
+        display: none;
+      }
       .product__box {
-        max-width: calc(25% - 2.5rem);
+        min-width: calc(25% - 2.5rem);
         color: #fff;
 
         &:hover img {
@@ -300,9 +302,11 @@ main {
       gap: 3rem;
       overflow-x: scroll;
       padding-top: 3rem;
-
+      &::-webkit-scrollbar{
+        display: none;
+      }
       .cars__box {
-        max-width: calc(33.33% - 2rem);
+        min-width: calc(33.33% - 2rem);
         color: #fff;
         &:hover img {
           transform: scale(1.3);

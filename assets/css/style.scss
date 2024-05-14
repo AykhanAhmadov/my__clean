@@ -52,6 +52,12 @@ html {
   src: url("../fonts/BebasNeue-Regular.ttf ");
 }
 
+@media screen and (min-width:2000px) {
+  html{
+    font-size: 150%
+  }
+}
+
 @import "_header__footer";
 @import "_main";
 @import "_about";
